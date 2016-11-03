@@ -1,0 +1,9 @@
+MSTnano v1.0.0 20160817 (released)
+
+Copyright(c) 2016 The Electronic Department of the Peking University.
+
+All rights reserved.
+
+Author: Hao Wang
+
+Complie flags:  g++48 -g -O2 -DMULTI_THREAD -std=c++11 -pthread
