@@ -54,7 +54,7 @@ inline void ScatterMatrixPrint(
 }
 
 inline void ScatterMatrixRead(
-					const char* FileSR, const char * FileSI, int nKstart, 
+					char* FileSR, char * FileSI, int nKstart, 
 					std::vector<std::vector<std::vector<double> > >& scatterR, 
 					std::vector<std::vector<std::vector<double> > >& scatterI)
 {

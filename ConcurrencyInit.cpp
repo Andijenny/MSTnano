@@ -7,7 +7,8 @@
 #include <Dense>
 #include <iomanip>
 #include "KKRcoef.h"
-#include "Tmatrix2.h"
+//#include "Tmatrix2.h"
+#include "ETmatrix.h"
 #include "Geometry.h"
 #include "ConcurrencyInit.h"
 #include <complex>

@@ -289,15 +289,13 @@ int main()
 					       vector<complex<double> >(Nsc, complex<double>(0.0, 0.0)))));
     
 	
-	std::thread::id master_thread = std::this_thread::get_id();
-	
+//	std::thread::id master_thread = std::this_thread::get_id();
 	
 	
 	char FileHostsSR[100];
 	char FileHostsSI[100];
 	sprintf(FileHostsSR,"HostsScatterMR%.3f",Etmp[0]);
 	sprintf(FileHostsSI,"HostsScatterMI%.3f",Etmp[0]);
-	
 	
 	if(!pinit.LReadHostsSMatrix)
 	{
@@ -350,7 +348,7 @@ int main()
 	
 	if (Nspecies_I > 0)
 	{
-		if(!pinit.LReadHostsSMatrix)
+		if(!pinit.LReadImpuritiesSMatrix)
 		{
 	
 			cout << "Iteration of the impurities' scattering path operator.\n";
