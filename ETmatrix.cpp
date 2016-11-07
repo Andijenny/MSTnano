@@ -62,11 +62,11 @@ Doub ulscf::delta_new(){
 complex<double> Tmatrix::calc_tma(double MixWeight, double ConvergPrecision)
 {
 	
-	VecDoub u0(radius.size());
-	VecDoub j0(radius.size());
-	VecDoub y0(radius.size());
-	VecDoub qd10(radius.size());
-	VecDoub qd20(radius.size());
+	VecDoub u0(radius.size(), 0.0);
+	VecDoub j0(radius.size(), 0.0);
+	VecDoub y0(radius.size(), 0.0);
+	VecDoub qd10(radius.size(), 0.0);
+	VecDoub qd20(radius.size(), 0.0);
 	Bessel besj;
 	Bessel besy;
 	ulscf ul;
@@ -105,10 +105,12 @@ complex<double> Tmatrix::calc_tma(double MixWeight, double ConvergPrecision)
 	}
 	
 	cout<<"For angular quantum number l= "<< LL << endl;
-	cout << "converged at: \n";
+	cout << "converged at the "<< cc <<"th step\n";
+	cout << string('*',30) << endl;
 	cout<<" kvector "<<"		tLL'		  "<<"	PhastShift		"<< endl; 
 	cout << setw(10)<<setprecision(6)<<kvalue;
 	cout <<"		"<< tLL <<"		"<< t1 <<endl;
+	cout << string('*',30) << endl;
 	return complex<double>(tLL, 0.0);
 }
 

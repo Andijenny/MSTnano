@@ -8,7 +8,7 @@ Doub quadsimp::intd(){
 	if(n==0){throw("Empty vector!");}
 	else if(n==1) {s=0.0;}
 	else if(n==2) {s=h*(y[0]+y[1])/2.0;}
-	else if(n==3) {s=h*(1.0/3.0*y[0]+4.0/3.0*y[1]+2.0/3.0*y[2]);}
+	else if(n==3) {s=h*(1.0/3.0*y[0]+4.0/3.0*y[1]+1.0/3.0*y[2]);}
 	else{
 		co[0]=co[n-1]=1.0/3.0;
 		for(Int i=1;i<Int((n-2)/2)+1;i++){

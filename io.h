@@ -134,7 +134,6 @@ inline void const RHOPrint(int Nk, int Np,
 	VectorXd rho(Nk);
     
 	vector<double> rr1(3);
-	cout << "Nrho" << Np << "*" << Nk;
 	int Npos = Np*Np*3;
 	int Nrho = Np*Np*Nk;
 	double Spos[Npos];
