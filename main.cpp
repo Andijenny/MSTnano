@@ -185,6 +185,9 @@ int main()
 	vector<vector<vector<double> > > Tll(Nk,vector<vector<double> >
 			(SA.size(),vector<double>(max(Lmax, Lmax_I)+1, 0.0)));
 
+	char FileTll[100];
+	sprintf(FileTll, "TllM%.3f", Etmp[0]);
+	
 	if(!pinit.LReadTMatrix)
 	{
 		cout << "Begin self-consistent calculation for t-matrix\n";	
@@ -210,11 +213,11 @@ int main()
 		cout << "End t-matrix calculation\n";	
 		cout << endl;
 		cout << endl;
-		TmatrixPrint(Tll);  
+		TmatrixPrint(FileTll, Tll);  
 	}
 	else
 	{
-		TmatrixRead(Tll);
+		TmatrixRead(FileTll, Tll);
 		cout << "Have read t-matrix from Tll_matrix\n";
 		cout << endl;
 		cout << endl;

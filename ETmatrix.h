@@ -2,31 +2,26 @@
 #define _ETMATRIX_H_
 #include "nr3.h"
 
-
 class ulscf
 {
 private:
-	Int l;
-	Doub k;
-	Doub dt;
-	VecDoub r;
-	VecDoub ur;//previous ur
-	VecDoub qd1;//quadrature term 1
-	VecDoub qd2;//quadrature term 2
-	Doub qd3;//quadrature term 3
+	int LL;
+	double kvalue;
+	double dt;
+	VecDoub radius;
 	VecDoub pot;
+	VecDoub ul;
 	VecDoub besjr;
 	VecDoub besnr;
 public:
-	ulscf(Int ll,  VecDoub & rr, VecDoub urr,  VecDoub pott, 
-		   VecDoub qdd1,  VecDoub qdd2,  Doub qdd3,
-		   VecDoub jrr, VecDoub nrr, Doub kk, Doub dtt)
-		: l(ll), r(rr), ur(urr), pot(pott),qd1(qdd1), qd2(qdd2), qd3(qdd3), 
-		   besjr(jrr), besnr(nrr), k(kk), dt(dtt){};
+	ulscf(int LL_, double kvalue_, double dt_, 
+		  VecDoub radius_, VecDoub pot_, VecDoub ul_,
+		  VecDoub besjr_, VecDoub besnr_): 
+		  LL(LL_), kvalue(kvalue_), dt(dt_),
+		  radius(radius_), pot(pot_), ul(ul_),
+		  besjr(besjr_), besnr(besnr_){};
 	ulscf(){};
-	Doub quadd();
-	void next(const Doub & weight=1.0);
-	VecDoub showu(){return ur;};
+	void next(const double weight=1.0);
 	Doub delta_new();
 	~ulscf(){};
 };

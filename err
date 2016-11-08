@@ -1,262 +1,30 @@
-In file included from main.cpp:1:0:
-/home/wh/usr/local/gcc-4.8.2/lib/gcc/x86_64-unknown-linux-gnu/4.8.2/include/mm_malloc.h: In function 'int posix_memalign(void**, size_t, size_t)':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/memory:74:0,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/thread:40,
-                 from main.cpp:6:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: At global scope:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h:72:5: error: expected unqualified-id before '{' token
-     { return "__gnu_cxx::__concurrence_lock_error"; }
-     ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h:71:5: error: looser throw specifier for 'virtual const char* __gnu_cxx::__concurrence_lock_error::what() const'
-     what() const throw()
-     ^
-In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ios:39:0,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/istream:38,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/fstream:38,
-                 from nr3.h:10,
-                 from main.cpp:1:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/exception:68:25: error:   overriding 'virtual const char* std::exception::what() const noexcept (true)'
-     virtual const char* what() const _GLIBCXX_USE_NOEXCEPT;
-                         ^
-In file included from main.cpp:1:0:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: In member function 'virtual const char* __gnu_cxx::__concurrence_lock_error::what() const':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/memory:74:0,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/thread:40,
-                 from main.cpp:6:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: At global scope:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h:80:5: error: expected unqualified-id before '{' token
-     { return "__gnu_cxx::__concurrence_unlock_error"; }
-     ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h:79:5: error: looser throw specifier for 'virtual const char* __gnu_cxx::__concurrence_unlock_error::what() const'
-     what() const throw()
-     ^
-In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ios:39:0,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/istream:38,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/fstream:38,
-                 from nr3.h:10,
-                 from main.cpp:1:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/exception:68:25: error:   overriding 'virtual const char* std::exception::what() const noexcept (true)'
-     virtual const char* what() const _GLIBCXX_USE_NOEXCEPT;
-                         ^
-In file included from main.cpp:1:0:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: In member function 'virtual const char* __gnu_cxx::__concurrence_unlock_error::what() const':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/memory:74:0,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/thread:40,
-                 from main.cpp:6:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: At global scope:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h:88:5: error: expected unqualified-id before '{' token
-     { return "__gnu_cxx::__concurrence_broadcast_error"; }
-     ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h:87:5: error: looser throw specifier for 'virtual const char* __gnu_cxx::__concurrence_broadcast_error::what() const'
-     what() const throw()
-     ^
-In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ios:39:0,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/istream:38,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/fstream:38,
-                 from nr3.h:10,
-                 from main.cpp:1:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/exception:68:25: error:   overriding 'virtual const char* std::exception::what() const noexcept (true)'
-     virtual const char* what() const _GLIBCXX_USE_NOEXCEPT;
-                         ^
-In file included from main.cpp:1:0:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: In member function 'virtual const char* __gnu_cxx::__concurrence_broadcast_error::what() const':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/memory:74:0,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/thread:40,
-                 from main.cpp:6:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: At global scope:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h:96:5: error: expected unqualified-id before '{' token
-     { return "__gnu_cxx::__concurrence_wait_error"; }
-     ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h:95:5: error: looser throw specifier for 'virtual const char* __gnu_cxx::__concurrence_wait_error::what() const'
-     what() const throw()
-     ^
-In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ios:39:0,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/istream:38,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/fstream:38,
-                 from nr3.h:10,
-                 from main.cpp:1:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/exception:68:25: error:   overriding 'virtual const char* std::exception::what() const noexcept (true)'
-     virtual const char* what() const _GLIBCXX_USE_NOEXCEPT;
-                         ^
-In file included from main.cpp:1:0:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: In member function 'virtual const char* __gnu_cxx::__concurrence_wait_error::what() const':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: In function 'void __gnu_cxx::__throw_concurrence_lock_error()':
-nr3.h:69:77: error: cannot pass objects of non-trivially-copyable type 'class __gnu_cxx::__concurrence_lock_error' through '...'
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                                             ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: In function 'void __gnu_cxx::__throw_concurrence_unlock_error()':
-nr3.h:69:77: error: cannot pass objects of non-trivially-copyable type 'class __gnu_cxx::__concurrence_unlock_error' through '...'
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                                             ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: In function 'void __gnu_cxx::__throw_concurrence_broadcast_error()':
-nr3.h:69:77: error: cannot pass objects of non-trivially-copyable type 'class __gnu_cxx::__concurrence_broadcast_error' through '...'
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                                             ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: In function 'void __gnu_cxx::__throw_concurrence_wait_error()':
-nr3.h:69:77: error: cannot pass objects of non-trivially-copyable type 'class __gnu_cxx::__concurrence_wait_error' through '...'
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                                             ^
-In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/memory:74:0,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/thread:40,
-                 from main.cpp:6:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: At global scope:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h:247:5: error: expected unqualified-id before '{' token
-     { _M_device.unlock(); }
-     ^
-In file included from main.cpp:1:0:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/ext/concurrence.h: In destructor '__gnu_cxx::__scoped_lock::~__scoped_lock()':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/bits/shared_ptr_base.h: In function 'void std::__throw_bad_weak_ptr()':
-nr3.h:69:77: error: cannot pass objects of non-trivially-copyable type 'class std::bad_weak_ptr' through '...'
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                                             ^
-In file included from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/memory:84:0,
-                 from /home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/thread:40,
-                 from main.cpp:6:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h: At global scope:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:90:12: error: invalid use of non-static data member 'std::auto_ptr< <template-parameter-1-1> >::_M_ptr'
-       _Tp* _M_ptr;
-            ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:103:49: error: from this location
-       auto_ptr(element_type* __p = 0) throw() : _M_ptr(__p) { }
-                                                 ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:103:56: error: '__p' was not declared in this scope
-       auto_ptr(element_type* __p = 0) throw() : _M_ptr(__p) { }
-                                                        ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:103:59: error: expected ';' at end of member declaration
-       auto_ptr(element_type* __p = 0) throw() : _M_ptr(__p) { }
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:103:61: error: expected unqualified-id before '{' token
-       auto_ptr(element_type* __p = 0) throw() : _M_ptr(__p) { }
-                                                             ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:90:12: error: invalid use of non-static data member 'std::auto_ptr< <template-parameter-1-1> >::_M_ptr'
-       _Tp* _M_ptr;
-            ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:112:41: error: from this location
-       auto_ptr(auto_ptr& __a) throw() : _M_ptr(__a.release()) { }
-                                         ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:112:48: error: '__a' was not declared in this scope
-       auto_ptr(auto_ptr& __a) throw() : _M_ptr(__a.release()) { }
-                                                ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:112:61: error: expected ';' at end of member declaration
-       auto_ptr(auto_ptr& __a) throw() : _M_ptr(__a.release()) { }
-                                                             ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:112:63: error: expected unqualified-id before '{' token
-       auto_ptr(auto_ptr& __a) throw() : _M_ptr(__a.release()) { }
-                                                               ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:90:12: error: invalid use of non-static data member 'std::auto_ptr< <template-parameter-1-1> >::_M_ptr'
-       _Tp* _M_ptr;
-            ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:125:49: error: from this location
-         auto_ptr(auto_ptr<_Tp1>& __a) throw() : _M_ptr(__a.release()) { }
-                                                 ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:125:56: error: '__a' was not declared in this scope
-         auto_ptr(auto_ptr<_Tp1>& __a) throw() : _M_ptr(__a.release()) { }
-                                                        ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:125:69: error: expected ';' at end of member declaration
-         auto_ptr(auto_ptr<_Tp1>& __a) throw() : _M_ptr(__a.release()) { }
-                                                                     ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:125:71: error: expected unqualified-id before '{' token
-         auto_ptr(auto_ptr<_Tp1>& __a) throw() : _M_ptr(__a.release()) { }
-                                                                       ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:137:7: error: expected unqualified-id before '{' token
-       {
-       ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:155:9: error: expected unqualified-id before '{' token
-         {
-         ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:182:7: error: expected unqualified-id before '{' token
-       {
-       ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:195:7: error: expected unqualified-id before '{' token
-       {
-       ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:211:27: error: expected unqualified-id before '{' token
-       get() const throw() { return _M_ptr; }
-                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:226:7: error: expected unqualified-id before '{' token
-       {
-       ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h:241:7: error: expected unqualified-id before '{' token
-       {
-       ^
-In file included from /home/wh/usr/local/eigen3.2.8/Eigen/Core:265:0,
-                 from /home/wh/usr/local/eigen3.2.8/Eigen/Dense:1,
-                 from /home/wh/usr/local/eigen3.2.8/Eigen/Eigen:1,
-                 from Geometry.h:7,
-                 from ParInitial.h:13,
-                 from main.cpp:14:
-/home/wh/usr/local/eigen3.2.8/Eigen/src/Core/arch/SSE/Complex.h:95:30: error: expected '}' before end of line
-   #pragma GCC diagnostic push
-                              ^
-In file included from main.cpp:1:0:
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h: In constructor 'std::auto_ptr< <template-parameter-1-1> >::auto_ptr(std::auto_ptr< <template-parameter-1-1> >::element_type*)':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h: In copy constructor 'std::auto_ptr< <template-parameter-1-1> >::auto_ptr(std::auto_ptr< <template-parameter-1-1> >&)':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h: In constructor 'std::auto_ptr< <template-parameter-1-1> >::auto_ptr(std::auto_ptr<_Up>&)':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h: In member function 'std::auto_ptr< <template-parameter-1-1> >& std::auto_ptr< <template-parameter-1-1> >::operator=(std::auto_ptr< <template-parameter-1-1> >&)':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h: In member function 'std::auto_ptr< <template-parameter-1-1> >& std::auto_ptr< <template-parameter-1-1> >::operator=(std::auto_ptr<_Up>&)':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h: In member function 'std::auto_ptr< <template-parameter-1-1> >::element_type& std::auto_ptr< <template-parameter-1-1> >::operator*() const':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h: In member function 'std::auto_ptr< <template-parameter-1-1> >::element_type* std::auto_ptr< <template-parameter-1-1> >::operator->() const':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h: In member function 'std::auto_ptr< <template-parameter-1-1> >::element_type* std::auto_ptr< <template-parameter-1-1> >::get() const':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h: In member function 'std::auto_ptr< <template-parameter-1-1> >::element_type* std::auto_ptr< <template-parameter-1-1> >::release()':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-/home/wh/usr/local/gcc-4.8.2/include/c++/4.8.2/backward/auto_ptr.h: In member function 'void std::auto_ptr< <template-parameter-1-1> >::reset(std::auto_ptr< <template-parameter-1-1> >::element_type*)':
-nr3.h:69:59: error: expected primary-expression before ',' token
- {printf("ERROR: %s\n     in file %s at line %d\n", message,__FILE__,__LINE__); throw(1);}
-                                                           ^
-In file included from /home/wh/usr/local/eigen3.2.8/Eigen/Core:265:0,
-                 from /home/wh/usr/local/eigen3.2.8/Eigen/Dense:1,
-                 from /home/wh/usr/local/eigen3.2.8/Eigen/Eigen:1,
-                 from Geometry.h:7,
-                 from ParInitial.h:13,
-                 from main.cpp:14:
-/home/wh/usr/local/eigen3.2.8/Eigen/src/Core/arch/SSE/Complex.h: At global scope:
-/home/wh/usr/local/eigen3.2.8/Eigen/src/Core/arch/SSE/Complex.h:95:30: error: expected unqualified-id before end of line
-   #pragma GCC diagnostic push
-                              ^
-/home/wh/usr/local/eigen3.2.8/Eigen/src/Core/arch/SSE/Complex.h:95:30: error: expected '}' before end of line
-/home/wh/usr/local/eigen3.2.8/Eigen/src/Core/arch/SSE/Complex.h:95:30: error: expected declaration before end of line
-make: *** [main.o] Error 1
+ETmatrix.cpp: In member function 'void ulscf::next(double)':
+ETmatrix.cpp:62:8: error: expected ';' before 'funcc1'
+  func1 funcc1(LL, kvalue, radius, pot, ul);
+        ^
+ETmatrix.cpp:62:43: error: statement cannot resolve address of overloaded function
+  func1 funcc1(LL, kvalue, radius, pot, ul);
+                                           ^
+ETmatrix.cpp:63:8: error: expected ';' before 'funcc2'
+  func2 funcc2 = func2(LL, kvalue, radius, pot, ul);
+        ^
+ETmatrix.cpp:63:51: error: statement cannot resolve address of overloaded function
+  func2 funcc2 = func2(LL, kvalue, radius, pot, ul);
+                                                   ^
+ETmatrix.cpp:71:14: error: 'funcc1' was not declared in this scope
+       *qgaus(funcc1, radius[0], radius[i])
+              ^
+ETmatrix.cpp:73:14: error: 'funcc2' was not declared in this scope
+       *qgaus(funcc2, radius[i], radius[radius.size()-1])
+              ^
+ETmatrix.cpp: In member function 'double ulscf::delta_new()':
+ETmatrix.cpp:79:8: error: expected ';' before 'funcc1'
+  func1 funcc1 = func1(LL, kvalue, radius, pot, ul);
+        ^
+ETmatrix.cpp:79:51: error: statement cannot resolve address of overloaded function
+  func1 funcc1 = func1(LL, kvalue, radius, pot, ul);
+                                                   ^
+ETmatrix.cpp:81:28: error: 'funcc1' was not declared in this scope
+  double t1 = -kvalue*qgaus(funcc1, radius[0], radius[radius.size()-1]);
+                            ^
+make: *** [ETmatrix.o] Error 1

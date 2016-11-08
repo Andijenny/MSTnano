@@ -52,11 +52,12 @@ void ParallelTmatrix(vector<int> ParallelPar, vector<vector<double> >rfit, vecto
 }
 
 
-void const TmatrixPrint(const vector<vector<vector<double> > > Tll)
+void const TmatrixPrint(char* FileTll, const vector<vector<vector<double> > > Tll)
 {
 	int cc = 1;
 	ofstream ftll;
-	ftll.open("Tll_matrix");
+//	ftll.open("Tll_matrix");
+	ftll.open(FileTll);
     for(int i=0;i<Tll.size();i++)
 	{
 		for(int j=0;j<Tll[0].size();j++)
@@ -76,10 +77,11 @@ void const TmatrixPrint(const vector<vector<vector<double> > > Tll)
     ftll.close();
 }
 
-void TmatrixRead(vector<vector<vector<double> > >& Tll)
+void TmatrixRead(char* FileTll, vector<vector<vector<double> > >& Tll)
 {
 	ifstream ftll;
-	ftll.open("Tll_matrix");
+//	ftll.open("Tll_matrix");
+	ftll.open(FileTll);
 	string buf;
 	int ts = Tll.size()*Tll[0].size()*Tll[0][0].size();
 	vector<double> tmp(ts);
