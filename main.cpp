@@ -200,7 +200,7 @@ int main()
 		cout << "|                           |" <<endl;
 		for(int i=0;i<SA.size();i++)
 		{
-			cout << "|       load " << setw(4)<<i<<": "<<SA[i]<<"    |" <<endl;
+			cout << "|       load " << setw(4)<<i<<": "<<SA[i]<<"   |" <<endl;
 //		cout << endl;
 		}
 		cout << "|                           |" <<endl;

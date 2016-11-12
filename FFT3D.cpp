@@ -194,7 +194,7 @@ void FFT3D::fftKKR(vector<vector<vector<complex<double> > > >& MKKRaux, int kv)
 		{
 			for(int j=-Nne;j<=Nne;j++)
 			{
-				for(int k=0;k<Nne;k++)
+				for(int k = 0; k < 1; k++)
 				{
 				#ifdef MULTI_THREAD
 					std::vector<std::thread> threads(num_threads-1);

@@ -22,7 +22,7 @@ public:
 		  besjr(besjr_), besnr(besnr_){};
 	ulscf(){};
 	void next(const double weight=1.0);
-	Doub delta_new();
+	Doub delta_new(double dt0, double MixWeight);
 	~ulscf(){};
 };
 

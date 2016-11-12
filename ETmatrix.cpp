@@ -64,26 +64,27 @@ void ulscf::next(const double weight)
 
 	for(int i = 0; i < ul.size(); i++)
 		ul[i] = ul[i]
-				+weight*
-					radius[i]*(
-						besf.sphbesj(LL, radius[i])*cos(dt)
-					   +kvalue*besf.sphbesy(LL, radius[i])
-						*qgaus(funcc1, radius[0], radius[i])
-					   +kvalue*besjr[i]
-						*qgaus(funcc2, radius[i], radius[radius.size()-1])
-					   -ul[i]);
+				+weight*(
+					radius[i]*(besjr[i]*cos(dt)
+								+kvalue*besnr[i]
+								 *qgaus(funcc1, radius[0], radius[i])
+								+kvalue*besjr[i]
+								 *qgaus(funcc2, radius[i], radius[radius.size()-1]))
+					-ul[i]);
 }
 
-double ulscf::delta_new()
+double ulscf::delta_new(double dt0, double MixWeight)
 {
 	func1 funcc1 = func1(LL, kvalue, radius, pot, ul);
 	
-	double t1 = -kvalue*qgaus(funcc1, radius[0], radius[radius.size()-1]);
-	if(abs(t1)>1.0) 
+	double t1 = sin(dt0)+ MixWeight*(-sin(dt0) 
+							- kvalue*qgaus(funcc1, radius[0], radius[radius.size()-1]));
+	if(abs(t1) > 1.0) 
 	{
+		cout << "sin(dt): " << t1 << endl;
 		cout << "Warning, phaseshift abnormal!" << endl;
 		srand(time(0));
-		t1=1.0-0.05*(rand()%11/10.0);
+		t1=1.0-0.5*(rand()%11/10.0);
 	}
 	dt = asin(t1);
 	return dt;
@@ -117,17 +118,18 @@ complex<double> Tmatrix::calc_tma(double MixWeight, double ConvergPrecision)
     ulscf ul = ulscf(LL, kvalue, 0.0, CopyRadius, CopyPotential, u0, j0, y0);	
 	
 	Doub t1 = 10.0;
-	double t0 = ul.delta_new();
+	double t0 = ul.delta_new(0.0, MixWeight);
 	
 	int cc = 0;
-	while(abs(t0 - t1) > ConvergPrecision*t0)
+	while(abs(t0 - t1) > abs(ConvergPrecision*t0))
 	{
 		cc++;
 		t0 = t1;
 		ul.next(MixWeight);
-		t1 = ul.delta_new();
+		t1 = ul.delta_new(t0, MixWeight);
 	}
 	
+	tLL = sin(t1)/(-kvalue);
 	cout<<"For angular quantum number l= "<< LL << endl;
 	cout << "converged at the "<< cc <<"th step\n";
 	cout << string('*',30) << endl;

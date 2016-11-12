@@ -26,7 +26,7 @@ void ScatteringPathOperator::ConstructTmatrix(vector<int> SL,
 	int Nspecies = tR.size();
 	int Nk = tR[0].size();
 	int Nlm = tR[0][0].size();
-	int Lmax = (int)sqrt(Nlm)-1;
+//	int Lmax = (int)sqrt(Nlm)-1;
 //	int Lmax = (int)Tll[0][0].size()-1;
 	
 	for(int i=0;i<Nspecies;i++)
